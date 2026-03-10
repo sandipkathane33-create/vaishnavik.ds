@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7-Day Student Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #34495e;
+            color: white;
+        }
+
+        thead {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #d6eaf8;
+        }
+
+        .weekend {
+            background-color: #fdebd0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Weekly Class Timetable (7 Days)</h2>
+
+<table>
+    <caption>Complete Weekly Timetable</caption>
+
+    <colgroup>
+        <col style="background-color:#f9f9f9">
+        <col span="5">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th scope="col">Day</th>
+            <th scope="col">9:00 - 10:00</th>
+            <th scope="col">10:00 - 11:00</th>
+            <th scope="col">11:00 - 12:00</th>
+            <th scope="col">12:00 - 1:00</th>
+            <th scope="col">1:00 - 2:00</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Monday</th>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td rowspan="2">Computer Lab</td>
+            <td>Physics</td>
+            <td>Sports</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tuesday</th>
+            <td>Biology</td>
+            <td>History</td>
+            <td>Chemistry</td>
+            <td>Library</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Wednesday</th>
+            <td colspan="2">Project Work</td>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td>Physics</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Thursday</th>
+            <td>History</td>
+            <td>Computer</td>
+            <td>Chemistry</td>
+            <td colspan="2">Seminar</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Friday</th>
+            <td>Biology</td>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td>Sports</td>
+            <td>Club Activities</td>
+        </tr>
+
+        <tr class="weekend">
+            <th scope="row">Saturday</th>
+            <td colspan="5">Workshop / Extra Activities</td>
+        </tr>
+
+        <tr class="weekend">
+            <th scope="row">Sunday</th>
+            <td colspan="5">Holiday</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="6">Total Days: 7 (Including Weekend)</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
